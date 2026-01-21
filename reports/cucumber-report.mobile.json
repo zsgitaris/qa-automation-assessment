@@ -1,0 +1,2361 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mobile-add-to-cart-(sauce-labs-sample-app);add-one-item-to-cart",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Add one item to cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 11577934100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5005239399,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:608:17)\n    at processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I add \"Sauce Labs Backpack\" to cart on mobile",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the cart badge should show \"1\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:31"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 476788199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mobile-add-to-cart-(sauce-labs-sample-app)",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Mobile Add to Cart (Sauce Labs Sample App)",
+    "tags": [],
+    "uri": "mobile\\features\\cart.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mobile-cart-management-(sauce-labs-sample-app);add-two-items-and-remove-one-from-cart",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Add two items and remove one from cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5139369199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5012680799,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:608:17)\n    at processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I add \"Sauce Labs Backpack\" to cart on mobile",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I add \"Sauce Labs Bike Light\" to cart on mobile",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the cart badge should show \"2\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:31"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I open the cart on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "cart should contain \"Sauce Labs Backpack\" on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:26"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "cart should contain \"Sauce Labs Bike Light\" on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:26"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I remove \"Sauce Labs Backpack\" from cart on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:44"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "cart should not contain \"Sauce Labs Backpack\" on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:35"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "the cart badge should show \"1\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:31"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 378862799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 3
+          },
+          {
+            "name": "@regression",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mobile-cart-management-(sauce-labs-sample-app)",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Mobile Cart Management (Sauce Labs Sample App)",
+    "tags": [],
+    "uri": "mobile\\features\\cart_management.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mobile-checkout-(sauce-labs-sample-app);checkout-one-item-successfully",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Checkout one item successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4864261900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5010356599,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:608:17)\n    at processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I add \"Sauce Labs Backpack\" to cart on mobile",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I open the cart on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "cart should contain \"Sauce Labs Backpack\" on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:26"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I proceed to checkout on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:54"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I fill checkout info on mobile with first name \"Zogi\" last name \"Ani\" postal code \"12345\"",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:59"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I finish checkout on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:77"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see the checkout complete screen on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:82"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 496990599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 3
+          },
+          {
+            "name": "@smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "mobile-checkout-(sauce-labs-sample-app);checkout-info-validation-should-show-error",
+        "keyword": "Scenario Outline",
+        "line": 25,
+        "name": "Checkout info validation should show error",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5354990499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5009725299,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:608:17)\n    at processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I add \"Sauce Labs Backpack\" to cart on mobile",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I open the cart on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I proceed to checkout on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:54"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I fill checkout info on mobile with first name \"\" last name \"Ani\" postal code \"12345\"",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:59"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see a checkout error containing \"First Name is required\"",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 638394299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 14
+          },
+          {
+            "name": "@negative",
+            "line": 14
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "mobile-checkout-(sauce-labs-sample-app);checkout-info-validation-should-show-error",
+        "keyword": "Scenario Outline",
+        "line": 26,
+        "name": "Checkout info validation should show error",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5885879600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5013489000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:608:17)\n    at processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I add \"Sauce Labs Backpack\" to cart on mobile",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I open the cart on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I proceed to checkout on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:54"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I fill checkout info on mobile with first name \"Zogi\" last name \"\" postal code \"12345\"",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:59"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see a checkout error containing \"Last Name is required\"",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 516860100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 14
+          },
+          {
+            "name": "@negative",
+            "line": 14
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "mobile-checkout-(sauce-labs-sample-app);checkout-info-validation-should-show-error",
+        "keyword": "Scenario Outline",
+        "line": 27,
+        "name": "Checkout info validation should show error",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5489484900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5001443699,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:608:17)\n    at processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I add \"Sauce Labs Backpack\" to cart on mobile",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:23"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I open the cart on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I proceed to checkout on mobile",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:54"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I fill checkout info on mobile with first name \"Zogi\" last name \"Ani\" postal code \"\"",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:59"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see a checkout error containing \"Postal Code is required\"",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 444018299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 14
+          },
+          {
+            "name": "@negative",
+            "line": 14
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mobile-checkout-(sauce-labs-sample-app)",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Mobile Checkout (Sauce Labs Sample App)",
+    "tags": [],
+    "uri": "mobile\\features\\checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mobile-biometric-login-(touch/faceid-mock);biometric-login-happy-path-(mock-success)",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Biometric login happy path (mock success)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6066460399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am on the mobile login screen",
+            "match": {
+              "location": "mobile\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5001706399,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:608:17)\n    at processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I trigger biometric login",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:58"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I complete biometric auth with \"success\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:74"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should see \"PRODUCTS\" on mobile",
+            "match": {
+              "location": "mobile\\steps\\login.steps.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 589131399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 3
+          },
+          {
+            "name": "@extras",
+            "line": 3
+          },
+          {
+            "name": "@biometrics",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "mobile-biometric-login-(touch/faceid-mock);biometric-login-negative-path-(mock-failure)",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Biometric login negative path (mock failure)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5537979499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am on the mobile login screen",
+            "match": {
+              "location": "mobile\\steps\\login.steps.ts:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5002494600,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:608:17)\n    at processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I trigger biometric login",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:58"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I complete biometric auth with \"failure\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:74"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see a mobile login error",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:190"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 523719100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 10
+          },
+          {
+            "name": "@extras",
+            "line": 10
+          },
+          {
+            "name": "@biometrics",
+            "line": 10
+          },
+          {
+            "name": "@negative",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mobile-biometric-login-(touch/faceid-mock)",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Mobile Biometric Login (Touch/FaceID mock)",
+    "tags": [],
+    "uri": "mobile\\features\\extras\\biometrics.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mobile-deep-link;open-a-deep-link-into-the-app",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Open a deep link into the app",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6027530299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I open the mobile app",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:17"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5011166800,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:608:17)\n    at processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I open deep link \"DEFAULT\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:41"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see \"PRODUCTS\" on mobile",
+            "match": {
+              "location": "mobile\\steps\\login.steps.ts:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 414994099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 8
+          },
+          {
+            "name": "@extras",
+            "line": 8
+          },
+          {
+            "name": "@deeplink",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mobile-deep-link",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Mobile Deep Link",
+    "tags": [],
+    "uri": "mobile\\features\\extras\\deeplink.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mobile-drawing-+-save-to-gallery;draw-something-and-save-to-gallery-(storage-permission-allow)",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Draw something and save to gallery (storage permission allow)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4926411499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5003580900,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:608:17)\n    at processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I open the mobile side menu",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I open the menu item \"Drawing\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I draw on the canvas",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:124"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I tap \"Save\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:97"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I allow the system permission dialog",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:81"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see a drawing saved confirmation",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:129"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 521989499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 3
+          },
+          {
+            "name": "@extras",
+            "line": 3
+          },
+          {
+            "name": "@drawing",
+            "line": 3
+          },
+          {
+            "name": "@permissions",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mobile-drawing-+-save-to-gallery",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Mobile Drawing + Save to Gallery",
+    "tags": [],
+    "uri": "mobile\\features\\extras\\drawing.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mobile-geo-location;geo-location-permission-allow-and-location-is-shown",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Geo location permission allow and location is shown",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4671201400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5001994900,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:608:17)\n    at processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I open the mobile side menu",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I open the menu item \"Geo Location\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I set device geo location to latitude -69.2425 and longitude 22.8077",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:89"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I allow the system permission dialog",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:81"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I tap \"Find Location\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:97"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see my coordinates on the screen",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:116"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 499059999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 3
+          },
+          {
+            "name": "@extras",
+            "line": 3
+          },
+          {
+            "name": "@geolocation",
+            "line": 3
+          },
+          {
+            "name": "@permissions",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mobile-geo-location",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Mobile Geo Location",
+    "tags": [],
+    "uri": "mobile\\features\\extras\\geolocation.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mobile-gestures-(swipe/drag-drop/pinch-zoom);swipe-up-and-down-on-products-list",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Swipe up and down on Products list",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5426447600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5016052800,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:608:17)\n    at processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I swipe up on the screen",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:144"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I swipe down on the screen",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:149"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the products screen should remain visible",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:164"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 561428600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 3
+          },
+          {
+            "name": "@extras",
+            "line": 3
+          },
+          {
+            "name": "@gestures",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "mobile-gestures-(swipe/drag-drop/pinch-zoom);pinch-and-zoom-on-the-current-screen-(best-effort)",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Pinch and zoom on the current screen (best-effort)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5185951999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5006506200,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:608:17)\n    at processTimers (node:internal/timers:543:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I pinch on the screen",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:154"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I zoom on the screen",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:159"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the products screen should remain visible",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:164"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5336799,
+              "error_message": "Error: WebDriverError: Request failed with error code UND_ERR_CLOSED when running \"http://127.0.0.1:4723/session/37be96a7-8522-4efc-9af9-3742bb8d74e9\" with method \"DELETE\"\n    at FetchRequest._libRequest (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1899:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async FetchRequest._request (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1925:20)\n    at async Browser.wrapCommandFn (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/@wdio/utils/build/index.js:982:23)\n    at async MobileWorld.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\hooks.ts:22:5)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 10
+          },
+          {
+            "name": "@extras",
+            "line": 10
+          },
+          {
+            "name": "@gestures",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mobile-gestures-(swipe/drag-drop/pinch-zoom)",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Mobile Gestures (swipe/drag-drop/pinch-zoom)",
+    "tags": [],
+    "uri": "mobile\\features\\extras\\gestures.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mobile-multi-language-(device-locale);english-locale-shows-english-words",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "English locale shows English words",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 660238699,
+              "error_message": "Error: Unable to connect to \"http://127.0.0.1:4723/\", make sure browser driver is running on that address.\nIt seems like the service failed to start or is rejecting any connections.\n    at startWebDriverSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1066:11)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async _WebDriver.newSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1484:41)\n    at async remote (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriverio/build/node.js:8942:20)\n    at async createAndroidDriver (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\driver.ts:65:18)\n    at async MobileWorld.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\hooks.ts:17:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open the mobile app",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the login screen should contain word \"Username\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:170"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 48799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 5
+          },
+          {
+            "name": "@extras",
+            "line": 5
+          },
+          {
+            "name": "@i18n",
+            "line": 5
+          },
+          {
+            "name": "@lang_en",
+            "line": 5
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "mobile-multi-language-(device-locale);german-locale-shows-german-words",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "German locale shows German words",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 510754699,
+              "error_message": "Error: Unable to connect to \"http://127.0.0.1:4723/\", make sure browser driver is running on that address.\nIt seems like the service failed to start or is rejecting any connections.\n    at startWebDriverSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1066:11)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async _WebDriver.newSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1484:41)\n    at async remote (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriverio/build/node.js:8942:20)\n    at async createAndroidDriver (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\driver.ts:65:18)\n    at async MobileWorld.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\hooks.ts:17:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I open the mobile app",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the login screen should contain word \"Benutzer\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:170"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 43399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 10
+          },
+          {
+            "name": "@extras",
+            "line": 10
+          },
+          {
+            "name": "@i18n",
+            "line": 10
+          },
+          {
+            "name": "@lang_de",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "mobile-multi-language-(device-locale);spanish-locale-shows-spanish-words",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Spanish locale shows Spanish words",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 511154999,
+              "error_message": "Error: Unable to connect to \"http://127.0.0.1:4723/\", make sure browser driver is running on that address.\nIt seems like the service failed to start or is rejecting any connections.\n    at startWebDriverSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1066:11)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async _WebDriver.newSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1484:41)\n    at async remote (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriverio/build/node.js:8942:20)\n    at async createAndroidDriver (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\driver.ts:65:18)\n    at async MobileWorld.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\hooks.ts:17:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I open the mobile app",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the login screen should contain word \"Usuario\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:170"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 15
+          },
+          {
+            "name": "@extras",
+            "line": 15
+          },
+          {
+            "name": "@i18n",
+            "line": 15
+          },
+          {
+            "name": "@lang_es",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mobile-multi-language-(device-locale)",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Mobile Multi-language (device locale)",
+    "tags": [],
+    "uri": "mobile\\features\\extras\\multi_language.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mobile-qr-scanner-+-permission-handling;qr-scanner-camera-permission-denied-shows-error-handling",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "QR scanner camera permission denied shows error handling",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 510031200,
+              "error_message": "Error: Unable to connect to \"http://127.0.0.1:4723/\", make sure browser driver is running on that address.\nIt seems like the service failed to start or is rejecting any connections.\n    at startWebDriverSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1066:11)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async _WebDriver.newSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1484:41)\n    at async remote (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriverio/build/node.js:8942:20)\n    at async createAndroidDriver (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\driver.ts:65:18)\n    at async MobileWorld.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\hooks.ts:17:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I open the mobile side menu",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I open the menu item \"QR\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I deny the system permission dialog",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:85"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see a QR scanner permission error",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:139"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 61599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 3
+          },
+          {
+            "name": "@extras",
+            "line": 3
+          },
+          {
+            "name": "@qrscanner",
+            "line": 3
+          },
+          {
+            "name": "@permissions",
+            "line": 3
+          },
+          {
+            "name": "@negative",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "mobile-qr-scanner-+-permission-handling;qr-scanner-camera-permission-allowed-opens-scanner",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "QR scanner camera permission allowed opens scanner",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 513000999,
+              "error_message": "Error: Unable to connect to \"http://127.0.0.1:4723/\", make sure browser driver is running on that address.\nIt seems like the service failed to start or is rejecting any connections.\n    at startWebDriverSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1066:11)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async _WebDriver.newSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1484:41)\n    at async remote (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriverio/build/node.js:8942:20)\n    at async createAndroidDriver (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\driver.ts:65:18)\n    at async MobileWorld.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\hooks.ts:17:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I open the mobile side menu",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I open the menu item \"QR\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I allow the system permission dialog",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:81"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see the QR scanner view",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:134"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 47299
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 11
+          },
+          {
+            "name": "@extras",
+            "line": 11
+          },
+          {
+            "name": "@qrscanner",
+            "line": 11
+          },
+          {
+            "name": "@permissions",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mobile-qr-scanner-+-permission-handling",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Mobile QR Scanner + Permission handling",
+    "tags": [],
+    "uri": "mobile\\features\\extras\\qr_scanner.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mobile-webview;open-webview-and-switch-context",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Open Webview and switch context",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 509837300,
+              "error_message": "Error: Unable to connect to \"http://127.0.0.1:4723/\", make sure browser driver is running on that address.\nIt seems like the service failed to start or is rejecting any connections.\n    at startWebDriverSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1066:11)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async _WebDriver.newSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1484:41)\n    at async remote (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriverio/build/node.js:8942:20)\n    at async createAndroidDriver (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\driver.ts:65:18)\n    at async MobileWorld.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\hooks.ts:17:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I open the mobile side menu",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I open the menu item \"Webview\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:27"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I can switch to WEBVIEW context and see web content",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:33"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 3
+          },
+          {
+            "name": "@extras",
+            "line": 3
+          },
+          {
+            "name": "@webview",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mobile-webview",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Mobile Webview",
+    "tags": [],
+    "uri": "mobile\\features\\extras\\webview.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mobile-login-(sauce-labs-sample-app);successful-login",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Successful login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 511810599,
+              "error_message": "Error: Unable to connect to \"http://127.0.0.1:4723/\", make sure browser driver is running on that address.\nIt seems like the service failed to start or is rejecting any connections.\n    at startWebDriverSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1066:11)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async _WebDriver.newSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1484:41)\n    at async remote (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriverio/build/node.js:8942:20)\n    at async createAndroidDriver (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\driver.ts:65:18)\n    at async MobileWorld.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\hooks.ts:17:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the mobile app",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I login on mobile with \"standard_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:176"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the products screen",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:184"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 3
+          },
+          {
+            "name": "@smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "mobile-login-(sauce-labs-sample-app);invalid-login",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Invalid login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 506319500,
+              "error_message": "Error: Unable to connect to \"http://127.0.0.1:4723/\", make sure browser driver is running on that address.\nIt seems like the service failed to start or is rejecting any connections.\n    at startWebDriverSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1066:11)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async _WebDriver.newSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1484:41)\n    at async remote (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriverio/build/node.js:8942:20)\n    at async createAndroidDriver (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\driver.ts:65:18)\n    at async MobileWorld.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\hooks.ts:17:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I open the mobile app",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I login on mobile with \"locked_out_user\" and \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:176"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I should see a mobile login error",
+            "match": {
+              "location": "mobile\\steps\\extras.steps.ts:190"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 9
+          },
+          {
+            "name": "@negative",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mobile-login-(sauce-labs-sample-app)",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Mobile Login (Sauce Labs Sample App)",
+    "tags": [],
+    "uri": "mobile\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "mobile-menu-(sauce-labs-sample-app);logout-from-products-screen-should-return-to-login",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Logout from products screen should return to login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 512991299,
+              "error_message": "Error: Unable to connect to \"http://127.0.0.1:4723/\", make sure browser driver is running on that address.\nIt seems like the service failed to start or is rejecting any connections.\n    at startWebDriverSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1066:11)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async _WebDriver.newSession (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriver/build/node.js:1484:41)\n    at async remote (file:///D:/QA%20assesment/qa-assessment-starter/node_modules/webdriverio/build/node.js:8942:20)\n    at async createAndroidDriver (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\driver.ts:65:18)\n    at async MobileWorld.<anonymous> (D:\\QA assesment\\qa-assessment-starter\\mobile\\support\\hooks.ts:17:17)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I am logged in on mobile as \"standard_user\" with password \"secret_sauce\"",
+            "match": {
+              "location": "mobile\\steps\\cart.steps.ts:8"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I logout from mobile app",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:93"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see the mobile login screen",
+            "match": {
+              "location": "mobile\\steps\\app.steps.ts:101"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 44400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@mobile",
+            "line": 3
+          },
+          {
+            "name": "@smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "mobile-menu-(sauce-labs-sample-app)",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Mobile Menu (Sauce Labs Sample App)",
+    "tags": [],
+    "uri": "mobile\\features\\menu.feature"
+  }
+]

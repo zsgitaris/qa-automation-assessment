@@ -1,0 +1,34 @@
+{
+  "name": "qa-automation-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BDD automation for web (Playwright) and mobile (Appium) with POM + Allure.",
+  "type": "commonjs",
+  "scripts": {
+    "postinstall": "playwright install --with-deps || playwright install",
+    "test:web": "cross-env ALLURE_RESULTS_DIR=allure-results/web cucumber-js -c cucumber.web.js",
+    "test:mobile": "cross-env ALLURE_RESULTS_DIR=allure-results/mobile cucumber-js -c cucumber.mobile.js",
+    "allure:generate:web": "allure generate allure-results/web --clean -o allure-report/web",
+    "allure:generate:mobile": "allure generate allure-results/mobile --clean -o allure-report/mobile",
+    "allure:open:web": "allure open allure-report/web",
+    "allure:open:mobile": "allure open allure-report/mobile"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.1",
+    "@cucumber/messages": "^31.2.0",
+    "@types/node": "^20.11.30",
+    "allure-commandline": "^2.27.0",
+    "allure-cucumberjs": "^3.4.4",
+    "allure-js-commons": "^3.4.4",
+    "appium-uiautomator2-driver": "^6.7.10",
+    "cross-env": "^7.0.3",
+    "expect": "^29.7.0",
+    "playwright": "^1.46.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "webdriverio": "^9.7.0"
+  },
+  "dependencies": {
+    "appium": "^3.1.2"
+  }
+}
