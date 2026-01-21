@@ -1,0 +1,63 @@
+name: Mobile Tests (Android Emulator)
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  android-emulator:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Appium driver (UiAutomator2)
+        run: npx appium driver install uiautomator2
+
+      - name: Run mobile suite on Android Emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: google_apis
+          arch: x86_64
+          profile: Nexus 6
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot
+          disable-animations: true
+          script: |
+            # Make sure your APK exists at resources/android/sample.apk in the repo.
+            nohup npx appium --address 127.0.0.1 --port 4723 --log-level info > appium.log 2>&1 &
+            export ANDROID_UDID=emulator-5554
+            export APK_PATH=$GITHUB_WORKSPACE/resources/android/sample.apk
+            export SLOWMO=0
+            npm run test:mobile
+
+      - name: Upload Appium log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: appium-log
+          path: appium.log
+
+      - name: Upload Allure results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-mobile
+          path: allure-results/mobile
